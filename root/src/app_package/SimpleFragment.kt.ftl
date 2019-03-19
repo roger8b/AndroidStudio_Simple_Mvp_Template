@@ -10,13 +10,14 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import ${applicationPackage}.base.view.BaseFragment
 import org.koin.android.ext.android.inject
 <#if applicationPackage??>
 import ${applicationPackage}.R
 </#if>
 
 
-class ${fragmentClass} : Fragment(), ${contractName}.View {
+class ${fragmentClass} : BaseFragment(), ${contractName}.View {
 
         private var listener: ${fragmentClass}InteractionListener? = null
 

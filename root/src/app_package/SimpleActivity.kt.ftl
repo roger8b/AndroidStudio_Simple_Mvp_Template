@@ -5,10 +5,11 @@ import android.os.Bundle
 import ${superClassFqcn}
 import ${applicationPackage}.R
 import ${applicationPackage}.util.replaceFragmentInActivity
+import ${applicationPackage}.base.view.BaseActivity
 import kotlinx.android.synthetic.main.${layoutName}.*
 import org.koin.android.ext.android.inject
 
-class ${activityClass} : ${superClass}(), ${fragmentClass}.${fragmentClass}InteractionListener {
+class ${activityClass} : BaseActivity(), ${fragmentClass}.${fragmentClass}InteractionListener {
 
     private val fragment: ${fragmentClass} by inject()
 
